@@ -1,0 +1,5 @@
+a = int(input())
+
+dis = a * 2
+
+print(dis , 'minutos' )
