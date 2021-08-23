@@ -1,0 +1,26 @@
+coluna = input()
+classif= input()
+alimen = input()
+
+if coluna == 'vertebrado':
+    if classif == 'ave':
+        if alimen == 'carnivoro':
+            print('aguia')
+        elif alimen == 'onivoro':
+            print('pomba')
+    elif classif == 'mamifero':
+        if alimen == 'onivoro':
+            print('homem')
+        elif alimen == 'herbivoro':
+            print('vaca')
+elif coluna == 'invertebrado':
+    if classif == 'inseto':
+        if alimen == 'hematofago':
+            print('pulga')
+        elif alimen == 'herbivoro':
+            print('lagarta')
+    elif classif == 'anelideo':
+        if alimen == 'hematofago':
+            print('sanguessuga')
+        elif alimen == 'onivoro':
+            print('minhoca')
