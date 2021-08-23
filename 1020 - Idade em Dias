@@ -1,0 +1,11 @@
+x = int(input())
+
+a = x // 365
+x = x - a*365
+m = x // 30
+x = x - m*30
+d = x
+
+print(round(a) , 'ano(s)')
+print(round(m) , 'mes(es)')
+print(round(d) , 'dia(s)')
