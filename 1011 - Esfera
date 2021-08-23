@@ -1,0 +1,7 @@
+raio = int(input())
+
+pi = 3.14159
+cn = ( 4 / 3) * pi  
+area = cn * (raio**3)
+
+print('VOLUME' , '=' , '{:.3f}' .format(area))
