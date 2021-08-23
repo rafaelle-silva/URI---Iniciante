@@ -1,0 +1,14 @@
+cg,qtde = input().split()
+cg = int(cg)
+qtde = int(qtde)
+
+if (cg == 1):
+    print('Total: R$ {:.2f}' .format((qtde * 4)))
+elif (cg == 2):
+    print('Total: R$ {:.2f}' .format((qtde * 4.5)))
+elif (cg == 3):
+    print('Total: R$ {:.2f}' .format((qtde * 5)))
+elif (cg == 4):
+    print('Total: R$ {:.2f}' .format((qtde * 2)))
+elif (cg == 5):
+    print('Total: R$ {:.2f}' .format((qtde * 1.5)))
