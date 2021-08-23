@@ -1,0 +1,8 @@
+a = input()
+b = float(input())
+c = float(input())
+
+cn = c * 0.15
+total = cn + b
+
+print('TOTAL' , '=' , 'R$' , '{:.2f}' .format(total))
