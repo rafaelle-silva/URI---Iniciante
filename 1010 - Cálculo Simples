@@ -1,0 +1,12 @@
+cg1, num1, vl1 = input().split()
+cg2, num2, vl2 = input().split()
+
+cg1 = int(cg1)
+num1 = int(num1)
+vl1 = float(vl1)
+cg2 = int(cg2)
+num2 = int(num2)
+vl2 = float(vl2)
+
+valor = (num1 * vl1) + (num2 * vl2)
+print('VALOR A PAGAR:', 'R$ {:.2f}' .format(valor))
