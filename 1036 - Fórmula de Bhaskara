@@ -1,0 +1,20 @@
+def calcula_bhaskara_positiva(a,b,c):
+    delta = (b ** 2) - (4 * a * c)
+    bhaskara_positiva = (- b + pow(delta , 1/2)) / (2 * a)
+    return bhaskara_positiva
+def calcula_bhaskara_negativa(a,b,c):
+    delta = (b ** 2) - (4 * a * c)
+    bhaskara_negativa = (- b - pow(delta, 1 / 2)) / (2 * a)
+    return bhaskara_negativa
+def valida_condiçao(a,b,c):
+    delta = (b ** 2) - (4 * a * c)
+    if ((delta < 0) or a == 0):
+        return False
+
+a,b,c = map (float,input().split())
+
+if valida_condiçao(a,b,c) == False:
+    print('Impossivel calcular')
+else:
+    print(f'R1 = {calcula_bhaskara_positiva(a,b,c):.5f}')
+    print(f'R2 = {calcula_bhaskara_negativa(a,b,c):.5f}')
