@@ -1,0 +1,37 @@
+x = float(input())
+
+sal1 = x + (x * 0.15)
+cn1 = sal1 - x
+
+sal2 = x + (x * 0.12)
+cn2 = sal2 - x
+
+sal3 = x + (x * 0.10)
+cn3 = sal3 - x
+
+sal4 = x + (x * 0.07)
+cn4 = sal4 - x 
+
+sal5 = x + (x * 0.04)
+cn5 = sal5 - x
+
+if (x >= 0) and (x <= 400):
+    print('Novo salario: {:.2f}'.format(sal1))
+    print('Reajuste ganho: {:.2f}' .format(cn1))
+    print('Em percentual:', '15 %')
+elif (x > 400) and (x <= 800):
+    print('Novo salario: {:.2f}' .format(sal2))
+    print('Reajuste ganho: {:.2f}' .format(cn2))
+    print('Em percentual:' , '12 %')
+elif (x > 800) and (x <= 1200):
+    print('Novo salario: {:.2f}' .format(sal3))
+    print('Reajuste ganho: {:.2f}' .format(cn3))
+    print('Em percentual:' , '10 %')
+elif (x > 1200) and (x <= 2000):
+    print('Novo salario: {:.2f}' .format(sal4))
+    print('Reajuste ganho: {:.2f}' .format(cn4))
+    print('Em percentual:' , '7 %')
+elif (x > 2000):
+    print('Novo salario: {:.2f}' .format(sal5))
+    print('Reajuste ganho: {:.2f}' .format(cn5))
+    print('Em percentual:' , '4 %')
