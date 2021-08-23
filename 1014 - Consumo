@@ -1,0 +1,5 @@
+a = int(input())
+b = float(input())
+
+t = a / b 
+print('{:.3f}' .format(t) , 'km/l')
