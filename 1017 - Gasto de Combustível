@@ -1,0 +1,7 @@
+tem = int(input())
+vel = int(input())
+
+dist = vel * tem
+lit = dist / 12
+
+print('{:.3f}' .format(lit))
