@@ -1,0 +1,56 @@
+valor_inicial = input()
+inteiro,decimal = valor_inicial.split('.')
+
+inteiro = int(inteiro)
+decimal = float(decimal)
+
+cedulas_100 = inteiro // 100
+valor = inteiro - cedulas_100 * 100
+
+cedulas_50 = valor // 50
+valor = valor - cedulas_50 * 50
+
+cedulas_20 = valor // 20
+valor = valor - cedulas_20 * 20
+
+cedulas_10 = valor // 10
+valor = valor - cedulas_10 * 10
+
+cedulas_5 = valor // 5
+valor = valor - cedulas_5 * 5
+
+cedulas_2 = valor // 2
+valor = valor - cedulas_2 * 2
+
+cedulas_1 = valor // 1
+valor = valor - cedulas_1 * 1
+
+cedulas_050 = decimal // 50
+valor = decimal - cedulas_050 * 50
+
+cedulas_025 = valor // 25
+valor = valor - cedulas_025 * 25
+
+cedulas_010 = valor // 10
+valor = valor - cedulas_010 * 10
+
+cedulas_05 = valor // 5
+valor = valor - cedulas_05 * 5
+
+cedulas_01 = valor // 1
+
+
+print('NOTAS:')
+print(f'{cedulas_100:.0f} nota(s) de R$ 100.00')
+print(f'{cedulas_50:.0f} nota(s) de R$ 50.00')
+print(f'{cedulas_20:.0f} nota(s) de R$ 20.00')
+print(f'{cedulas_10:.0f} nota(s) de R$ 10.00')
+print(f'{cedulas_5:.0f} nota(s) de R$ 5.00')
+print(f'{cedulas_2:.0f} nota(s) de R$ 2.00')
+print('MOEDAS:')
+print(f'{cedulas_1:.0f} moeda(s) de R$ 1.00')
+print(f'{cedulas_050:.0f} moeda(s) de R$ 0.50')
+print(f'{cedulas_025:.0f} moeda(s) de R$ 0.25')
+print(f'{cedulas_010:.0f} moeda(s) de R$ 0.10')
+print(f'{cedulas_05:.0f} moeda(s) de R$ 0.05')
+print(f'{cedulas_01:.0f} moeda(s) de R$ 0.01')
